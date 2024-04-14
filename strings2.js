@@ -28,19 +28,3 @@ function checkPali(){
     console.log(attempts + " attempts left.");
     }
 }
-
-function validateForm(){
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
-    const zipcode = document.getElementById('zipcode').value;
-    
-    let firstPlusLast = (firstname + " " + lastname);
-    let length = firstPlusLast.length;
-
-    if(length > 20){
-        alert("Too Many Characters");
-        return;
-    }
-    alert("Registration Successful");
-    document.getElementById('registrationForm').submit();
-}
