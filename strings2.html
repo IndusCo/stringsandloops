@@ -1,3 +1,4 @@
+<!--Ahsan Tariq-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +8,44 @@
 
 <link rel="stylesheet" href="strings2.css">
 
-<h1><center>Palindrome Checker</center></h1>
+<h1><center>PALINDROME CHECKER</center></h1>
 
 <script src="strings2.js"></script>
 
+
+<!--palindrome checker button that brings up prompt and runs function-->
 <center>
 <form id="wordForm" onsubmit="checkPali()">
     <input type="submit" value="Check Palindrome"><br><br>
-
 </form>
 </center>
+
+<!--the registration form table for user inputs-->
+<center>
+<table>
+<tr>
+<td>
+<center>
+<ul>
+<form id="registrationForm" onsubmit="validateForm()">
+    <label for="firstname">Firstname:</label> <!--user input for first name-->
+    <input type="text" id="firstname" name="firstname" required><br><br>
+
+    <label for="lastname">Lastname:</label> <!--user input for last name-->
+    <input type="text" id="lastname" name="lastname" required><br><br>
+
+    <label for="zipcode">Zipcode:</label> <!--user input for zipcode-->
+    <input type="number" id="zipcode" name="zipcode" required><br><br>
+
+    <input type="submit" value="Submit"><br><br>
+</ul>
+</center>
+</form>
+</td>
+</tr>
+</table>
+</center>
+
 
 </body>
 </html>
